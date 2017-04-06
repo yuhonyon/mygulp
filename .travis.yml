@@ -2,12 +2,8 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
-deploy:
-  provider: npm
-  api_key: ${TOKEN}
-  email: ${Email}
-  on:
-    branch: master
 
-before_deploy:
-  - cd ./gulp-yfy-img
+before_script:
+  - echo -e "${Username}\n${Password}\n${Email}" | npm login
+
+script: npm publish
