@@ -6,7 +6,6 @@ deploy:
   api_key: $TOKEN
   email: $Email
   provider: npm
-  on:
-    tags: true
+
 before_deploy:
   - cd gulp-yfy-img
