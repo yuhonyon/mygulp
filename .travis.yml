@@ -2,10 +2,12 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
+deploy:
+  api_key: $TOKEN
+  email: $Email
+  provider: npm
+  on:
+    tags: true
 script:
   - cd gulp-yfy-img
-  - npm login
-  - $Username
-  - $Password
-  - $Emalil
-  - npm publish
+
