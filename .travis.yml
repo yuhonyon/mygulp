@@ -3,7 +3,11 @@ node_js:
   - "iojs"
   - "7"
 
-before_script:
-  - echo -e "${Username}\n${Password}\n${Email}" | npm login
+before_deploy:
+  - cd ./gulp-yfy-img
 
-script: npm publish
+deploy:
+   provider: npm
+   email: "975057282@qq.com"
+   api_key: "${TOKEN}"
+   allow_failure: true
