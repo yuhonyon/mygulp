@@ -4,4 +4,8 @@ node_js:
   - "7"
 script:
   - cd gulp-yfy-img
+  - npm login
+  - $Username
+  - $Password
+  - $Emalil
   - npm publish
