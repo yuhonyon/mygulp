@@ -3,9 +3,11 @@ node_js:
   - "iojs"
   - "7"
 deploy:
-  api_key: $TOKEN
-  email: $Email
   provider: npm
+  api_key: ${TOKEN}
+  email: ${Email}
+  on:
+    branch: master
 
 before_deploy:
-  - cd gulp-yfy-img
+  - cd ./gulp-yfy-img
