@@ -8,6 +8,5 @@ deploy:
   provider: npm
   on:
     tags: true
-script:
+before_deploy:
   - cd gulp-yfy-img
-  - npm publish
