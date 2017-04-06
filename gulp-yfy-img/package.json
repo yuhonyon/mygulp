@@ -1,6 +1,6 @@
 {
   "name": "gulp-yfy-img",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "图片加载优化,jpg渐变式progressive加载,png生成一倍图",
   "main": "index.js",
   "scripts": {
